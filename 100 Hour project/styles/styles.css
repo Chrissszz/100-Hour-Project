@@ -24,8 +24,28 @@ header{
     font-family: 'Lexend Deca', sans-serif;
 }
 .headerList li{
+    position: relative;
     padding-right: 80px;
 }
+.headerList li a {
+    color: orange;
+    font-family: 'Acme', sans-serif;
+    font-size: 120%;
+  }
+  .headerList > li:hover::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("https://cdn.icon-icons.com/icons2/2248/PNG/512/cat_icon_138789.png");
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  
 .address{
     width: 10%;
     display: flex;
@@ -33,10 +53,38 @@ header{
     margin-left: auto;
     font-family: 'Lexend Deca', sans-serif;
 }
+#firstSection{
+    font-family: 'Acme', sans-serif;
+}
 #findKitty{
     width: 40%;
     margin: auto;
 }
+
+.soulmate{
+font-size: 100px;
+}
+.viewCats{
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: orange;
+}
+.viewCats:hover::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("https://cdn.icon-icons.com/icons2/2248/PNG/512/cat_icon_138789.png");
+    background-size: cover;
+    border-radius: 50%;
+    
+  }
 #firstSection{
     display: flex;
 }
@@ -44,6 +92,15 @@ header{
     width: 40%;
     margin-left: auto;
 }
+.kittyPicture{
+    height: 500px;
+    width: 750px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+.kittyPicture.hidden {
+    opacity: 0;
+  }
 #containerOne{
     text-align: center;
 }
@@ -102,4 +159,7 @@ footer{
     position: relative;
     bottom: 50px;
     font-family: 'Lexend Deca', sans-serif;
+}
+a{
+    text-decoration: none;
 }
