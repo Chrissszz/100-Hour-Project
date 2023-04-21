@@ -102,6 +102,7 @@ font-size: 100px;
     opacity: 0;
   }
 #containerOne{
+    margin-top: 150px;
     text-align: center;
 }
 #picturesNLinks{
